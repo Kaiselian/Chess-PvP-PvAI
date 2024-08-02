@@ -8,6 +8,8 @@ class Board:
         self.squares = [[0,0,0,0,0,0,0,0] for col in range COLS]
 
         self._create_()
+        self.__add__pieces('white')
+        self.__add__pieces('black')
     def _create_(self):
         for row in range(ROWS):
             for col in range(COLS):
