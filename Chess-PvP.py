@@ -25,7 +25,6 @@ class Main:
                     pygame.quit()
                     sys.exit()
 
-
             pygame.display.update()
 
 main = Main()
