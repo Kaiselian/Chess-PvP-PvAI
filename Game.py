@@ -11,13 +11,12 @@ class Game:
         for row in range(ROWS):
             for col in range(COLS):
                 if (row + col) % 2 == 0:
-                    color = (234, 235, 200) #light green
+                    color = (255, 233, 197) #light green
                 else:
-                    color = (119, 154, 88) #dark green
+                    color = (102, 153, 51) #dark green
 
-                    rect = (col * SQSIZE, row * SQSIZE, SQSIZE, SQSIZE)
-
-                    pygame.draw.rect(surface, color, rect)
+                rect = (col * SQSIZE, row * SQSIZE, SQSIZE, SQSIZE)
+                pygame.draw.rect(surface, color, rect)
 
     def show_pieces(self, surface):
         for row in range(ROWS):

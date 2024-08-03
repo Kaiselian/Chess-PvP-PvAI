@@ -13,7 +13,7 @@ class Piece:
         self.texture_rect = texture_rect
 
     def set_texture(self):
-        self.texture = os.path.join(f'assets/images/imgs-128px/{self.color}_{self.name}.png')
+        self.texture = os.path.join(f'assets/images/imgs-80px/{self.color}_{self.name}.png')
 
     def add_moves(self, move):
         self.moves.append(move)
