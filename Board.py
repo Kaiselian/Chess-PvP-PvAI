@@ -1,11 +1,12 @@
 import os
 from Piece import *
 from Const import *
+from Square import Square
 
 class Board:
 
     def __init__(self):
-        self.squares = [[0,0,0,0,0,0,0,0] for col in range COLS]
+        self.squares = [[0,0,0,0,0,0,0,0] for col in range (COLS)]
 
         self._create_()
         self.__add__pieces('white')
