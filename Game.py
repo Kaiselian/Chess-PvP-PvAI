@@ -1,11 +1,12 @@
 import pygame
 from Board import Board
 from Const import *
+from Dragger import Dragger
 
 class Game:
     def __init__(self):
             self.board = Board()
-
+            self.dragger = Dragger()
     # Show methods
     def show_bg(self, surface):
         for row in range(ROWS):
